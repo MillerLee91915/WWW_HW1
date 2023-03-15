@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* css for header */
+.header {
+    color: white;
+    background-image: url('../source/Zootopia.png');
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navbtn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    border: 1px solid;
+    color: white;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #c1b5a4;
+    color: #80624f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c1b5a4;
+    color: #80624f;
+}
+
+.navbtn:hover {
+    background-color: #c1b5a4;
+    color: #80624f;
+}
+
+.navbtn:hover a {
+    color: #80624f;
+}
+
+/* css for body */
+.body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../source/texture.png');
+    justify-content: center;
+    align-items: center;
+}
+
+.typingContainer {
+    display: inline-block;
+}
+
+.typewriter {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #80624f;
+    padding: 1rem 0rem;
+    font-weight: bold;
+
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    form {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.imageContainer img {
+    border-radius: 100%;
+    width: 30rem;
+    box-shadow: 5px 5px 16px #80624f, 5px 5px 16px #80624f, 5px 5px 16px #80624f, 5px 5px 16px #80624f;
+}
+
+/* css for footer */
+
+.footer {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #363945;
+    text-align: center;
+}
+
+/* css for panda */
+
+.title {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #80624f;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.animalTable {
+    border: solid 1px black;
+    margin: 1rem 10rem;
+}
+
+.animalTable td{
+    vertical-align: middle;
+}
+
+.animalTable tr{
+    border: solid 1px black;
+}
+
+.animalName {
+    border: solid 1px black;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-weight: bold;
+}
+
+.animalInfo {
+    border: solid 1px black;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align:left;
+    font-weight: bold;
+}
+
+/* css for info */
+
+.listContainer {
+    margin: 0rem 10rem 4rem 10rem;
+    font-weight: bold;
+}
+
+.listContainer ul,
+ol,
+li {
+    padding: 0.4rem 1rem;
+}
+
+.listContainer p {
+    line-height: 2rem;
+}
